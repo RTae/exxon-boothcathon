@@ -3,3 +3,5 @@
 workshop/datas/*.csv
 workshop/clean_data/*.csv
 workshop/output/*.csv
+infra/configs/.terraform.lock.hcl
+infra/configs/.terragrunt-cache

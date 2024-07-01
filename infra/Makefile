@@ -16,7 +16,7 @@ help:
 	@echo ""
 
 define terragrunt_command
-	cd ./configs && terragrunt $(2) $(3)
+	cd ./configs && terragrunt $(1) $(2)
 endef
 
 TEMPLATES_DIR = ./modules/*

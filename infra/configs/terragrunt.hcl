@@ -19,6 +19,16 @@ remote_state {
 }
 
 inputs = {
-  project_id = local.project_id
-  location   = local.location
+  project_id      = local.project_id
+  location        = local.location
+  access_members  = [
+    {
+      role : "OWNER"
+      email : "kasidit.suwannagarn@gmail.com"
+    },
+    {
+      role : "OWNER"
+      email : "natthanan.bhu@gmail.com"
+    },
+  ]
 }

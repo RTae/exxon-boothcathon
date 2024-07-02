@@ -39,3 +39,29 @@ module "service_account" {
   description  = each.value.description
   iam_roles    = each.value.iam_roles
 }
+
+module "dataset" {
+
+  source = "./modules/bigquery/dataset"
+
+  location   = var.location
+  project_id = var.project_id
+
+  name         = "analysis"
+  display_name = "Analysis"
+  description  = "Analysis"
+
+  access = concat(
+    [
+      {
+        role  = "READER"
+        email = module.service_account[2].email_sa
+      },
+    ],
+    var.access_members
+  )
+
+  depends_on = [
+    module.service_account,
+  ]
+}

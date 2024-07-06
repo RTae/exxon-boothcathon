@@ -47,7 +47,7 @@ module "dataset" {
   location   = var.location
   project_id = var.project_id
 
-  name         = "analysis"
+  name         = var.bq_dataset_name
   display_name = "Analysis"
   description  = "Analysis"
 
@@ -64,4 +64,48 @@ module "dataset" {
   depends_on = [
     module.service_account,
   ]
+}
+
+locals {
+  biq_query_tables = [
+    {
+      name : "mer",
+      description : "Table for MER",
+      file_path : "./bq_table_schema/mer.json"
+      time_partitioning : [
+        {
+          type  = "MONTH"
+          field = "Invoicedate"
+        }
+      ],
+      view_query_path : null
+    },
+    {
+      name : "mrw",
+      description : "Table for mrw",
+      file_path : "./bq_table_schema/mrw.json"
+      time_partitioning : [
+        {
+          type  = "MONTH"
+          field = "ScanDate"
+        }
+      ],
+      view_query_path : null
+    },
+  ]
+}
+module "table" {
+  for_each = { for idx, bq in local.biq_query_tables : idx => bq }
+  source   = "./modules/bigquery/table"
+
+  project_id = var.project_id
+
+  dataset_name      = var.bq_dataset_name
+  name              = each.value.name
+  description       = each.value.description
+  time_partitioning = each.value.time_partitioning
+  file_path         = each.value.file_path
+  view_query_path   = each.value.view_query_path
+
+  depends_on = [module.dataset]
 }

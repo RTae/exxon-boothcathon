@@ -1,0 +1,82 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "UserId",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ProductSKU",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Distributor",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ProductName",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ScanDate",
+    "type": "DATE"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Count",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Points",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Volume",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Fullname",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ProductLine",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "UserIdOwner",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "GarageId",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "UserType",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Postcode",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Province",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "District",
+    "type": "STRING"
+  }
+]

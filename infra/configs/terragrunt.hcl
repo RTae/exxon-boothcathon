@@ -30,5 +30,13 @@ inputs = {
       role : "OWNER"
       email : "natthanan.bhu@gmail.com"
     },
+    {
+      role : "OWNER"
+      email : "pasinsukumalchan@gmail.com"
+    },
+    {
+      role : "OWNER"
+      email : "sirawit45410@gmail.com"
+    },
   ]
 }

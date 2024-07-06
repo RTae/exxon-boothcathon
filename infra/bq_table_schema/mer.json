@@ -1,0 +1,72 @@
+[
+    {
+      "mode": "NULLABLE",
+      "name": "MatNo",
+      "type": "INTEGER"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "Invoicedate",
+      "type": "DATE"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "Distributor",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "GroupId",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "Type",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "Provincename",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "MaterialName",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "New_Volume",
+      "type": "INTEGER"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "Viscosity",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "isDelvac",
+      "type": "BOOLEAN"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "Package",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "ProductLine",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "GroupName",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "Points",
+      "type": "INTEGER"
+    }
+  ]
